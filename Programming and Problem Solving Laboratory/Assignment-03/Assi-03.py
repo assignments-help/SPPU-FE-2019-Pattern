@@ -2,13 +2,10 @@
 # To accept N numbers from user. Compute and display maximum in list, minimum in list,
 # sum and average of numbers.
 
-n = int(input('Enter n: '))
+print('Enter numbers separated by white space: ')
 
-arr = []
-
-for i in range(n):
-    x = int(input())
-    arr.append(x)
+arr = [int(x) for x in input().split()]
+n = len(arr)
 
 min_num = arr[0]
 max_num = arr[0]
